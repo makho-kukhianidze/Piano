@@ -1,0 +1,85 @@
+*{
+  margin: 2px;
+  padding: 0px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+body{
+  background-color: rgb(34, 33, 33);
+}
+.box {
+  margin-bottom: 12px;
+  margin-top: 12px;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+button{
+  z-index: 1;
+  border-left: 1px solid #bbb;
+  border-bottom: 1px solid #bbb;
+  border-radius: 0 0 5px 5px;
+  -webkit-box-shadow: -1px 0 0 rgb(255 255 255 / 80%) inset, 0 0 5px #ccc inset, 0 0 3px rgb(0 0 0 / 20%);
+          box-shadow: -1px 0 0 rgb(255 255 255 / 80%) inset, 0 0 5px #ccc inset, 0 0 3px rgb(0 0 0 / 20%);
+  background: -o-linear-gradient(top,#eee 0%,#fff 100%);
+  background: -webkit-gradient(linear,left top, left bottom,from(#eee),to(#fff));
+  background: linear-gradient(to bottom,#eee 0%,#fff 100%);
+  height: 200px;
+  width: 11%;
+  outline: none;  
+}
+button:active {
+border-top:1px solid #777;
+border-left:1px solid #999;
+border-bottom:1px solid #999;
+-webkit-box-shadow:2px 0 3px rgba(0,0,0,0.1) inset,-5px 5px 20px rgba(0,0,0,0.2) inset,0 0 3px rgba(0,0,0,0.2);
+        box-shadow:2px 0 3px rgba(0,0,0,0.1) inset,-5px 5px 20px rgba(0,0,0,0.2) inset,0 0 3px rgba(0,0,0,0.2);
+background:-o-linear-gradient(top,#fff 0%,#e9e9e9 100%);
+background:-webkit-gradient(linear,left top, left bottom,from(#fff),to(#e9e9e9));
+background:linear-gradient(to bottom,#fff 0%,#e9e9e9 100%)
+}
+span{
+  font-size: 13px;
+  font-weight: 700;
+}
+p{
+  color: black;
+  text-align: center;
+  font-size: 15px;
+  background: #f8f8f8;
+  font-weight: 900;
+  padding: 5px;
+  margin: 12px;
+}
+
+@media only screen and (min-width: 768px) {
+  button {
+    height: 500px;
+}
+span {
+  font-size: 21px;
+  font-weight: 700;
+}
+p{
+  font-size: 21px;
+}
+}
+@media only screen and (max-width: 769px) {
+  button {
+    height: 300px;
+}
+span {
+  font-size: 15px;
+  font-weight: 700;
+}
+}
